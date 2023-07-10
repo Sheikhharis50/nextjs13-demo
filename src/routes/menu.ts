@@ -7,6 +7,11 @@ const MenuRoutes: MenuRouteType[] = [
         displayName: "Dashboard",
     },
     {
+        name: "product",
+        path: "/product",
+        displayName: "Products",
+    },
+    {
         name: "about",
         path: "/about",
         displayName: "About Us",

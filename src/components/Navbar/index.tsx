@@ -40,7 +40,7 @@ export default function Navbar() {
         className={`
           w-full 
           md:flex md:items-center md:w-auto
-          ${isOpen && "hidden"}
+          ${!isOpen && "hidden"}
         `}
       >
         <ul
