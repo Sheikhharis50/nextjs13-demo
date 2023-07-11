@@ -1,3 +1,7 @@
+import { getMetaData } from "@/routes/utils";
+
+export const metadata = getMetaData("dashboard");
+
 export default function ProductDetailPage() {
   return (
     <main className="text-center">

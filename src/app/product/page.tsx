@@ -1,3 +1,7 @@
+import { getMetaData } from "@/routes/utils";
+
+export const metadata = getMetaData("product");
+
 export default function ProductListPage() {
   return (
     <main className="text-center">
