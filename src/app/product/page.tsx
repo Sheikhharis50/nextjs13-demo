@@ -1,3 +1,7 @@
 export default function ProductListPage() {
-  return <></>;
+  return (
+    <main className="text-center">
+      <h1>Hello, Product List Page!</h1>
+    </main>
+  );
 }
