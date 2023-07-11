@@ -4,9 +4,9 @@ export default function ProductLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
+    <>
       {/* sidebar */}
       {children}
-    </section>
+    </>
   );
 }
