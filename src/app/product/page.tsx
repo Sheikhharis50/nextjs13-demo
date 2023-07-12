@@ -1,3 +1,3 @@
 export default function ProductListPage() {
-  return <></>;
+  return <>Products Page</>;
 }
