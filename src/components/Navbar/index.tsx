@@ -23,6 +23,7 @@ export default function Navbar() {
           bg-white
           border-b
           sticky top-0
+          dark:bg-black
         "
     >
       <div>
@@ -47,7 +48,7 @@ export default function Navbar() {
       >
         <ul
           className="
-            text-base text-gray-700
+            text-base text-gray-700 dark:text-white
             pt-4
             md:flex
             md:justify-between
@@ -61,9 +62,10 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li>
+          {/* TODO: we will create its functionality later. */}
+          {/* <li>
             <ThemeToggle />
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
