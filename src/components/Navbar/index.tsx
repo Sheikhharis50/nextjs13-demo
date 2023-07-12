@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import MenuRoutes from "@/routes/menu";
+import ThemeToggle from "@/components/Common/ThemeToggle";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 import React from "react";
 
 export default function Navbar() {
@@ -27,10 +29,8 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <Image
+      <Bars3Icon
         className="cursor-pointer md:hidden"
-        src="/icons/hamburger.svg"
-        alt="Hamburger Menu"
         width={50}
         height={50}
         onClick={() => setOpen(!isOpen)}
@@ -59,6 +59,9 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <li>
+            <ThemeToggle />
+          </li>
         </ul>
       </div>
     </nav>

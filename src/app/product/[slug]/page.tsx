@@ -1,3 +1,11 @@
+import { getMetaData } from "@/routes/utils";
+
+export const metadata = getMetaData("dashboard");
+
 export default function ProductDetailPage() {
-  return <>specific product</>;
+  return (
+    <main className="text-center">
+      <h1>Hello, Product Detail Page!</h1>
+    </main>
+  );
 }

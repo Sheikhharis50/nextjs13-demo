@@ -1,24 +1,19 @@
-import { MenuRouteType, MetaRouteType } from './types'
+import type { Metadata } from "next";
 import MetaRoutes from './meta'
-import MenuRoutes from './menu'
 
 /**
- * The function `getMenuRoute` returns a `MenuRouteType` object from an array of `MenuRoutes` based on the
- * provided name.
- * @param {string} name - A string representing the name of the menu route.
- * @returns a value of type `MenuRouteType` or `undefined`.
+ * The `getMetaData` function takes a name parameter and returns the title and description metadata for
+ * a given route name.
+ * @param {string} name - The `name` parameter is a string that represents the name of a route.
+ * @returns an object with two properties: "title" and "description". The values of these properties
+ * are obtained from the "route" object that matches the given "name" parameter in the "MetaRoutes"
+ * array. If a matching route is found, the function returns an object with the "title" and
+ * "description" properties from the matching route. If no matching route is found,
  */
-export const getMenuRoute = (name: string): MenuRouteType | undefined => {
-    return MenuRoutes.find((route) => route.name === name)
+export const getMetaData = (name: string): Metadata => {
+    const route = MetaRoutes.find((route) => route.name === name)
+    return {
+        title: route?.title,
+        description: route?.description,
+    }
 }
-
-/**
- * The function `getMetaRoute` returns a `MetaRouteType` object based on the provided name, or
- * `undefined` if no matching route is found.
- * @param {string} name - A string representing the name of the route.
- * @returns a value of type `MetaRouteType` or `undefined`.
- */
-export const getMetaRoute = (name: string): MetaRouteType | undefined => {
-    return MetaRoutes.find((route) => route.name === name)
-}
-
