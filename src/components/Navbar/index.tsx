@@ -21,6 +21,8 @@ export default function Navbar() {
           px-4
           text-lg text-gray-700
           bg-white
+          border-b
+          sticky top-0
         "
     >
       <div>

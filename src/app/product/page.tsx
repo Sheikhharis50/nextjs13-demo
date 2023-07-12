@@ -28,9 +28,9 @@ export default function ProductListPage() {
   ];
 
   return (
-    <main className="text-center px-10 md:px-20 lg:px-24">
+    <main className="px-10">
       <h1>Products</h1>
-      <div className="flex flex-wrap items-center gap-2 py-2">
+      <div className="flex flex-wrap items-center gap-3 py-2">
         {products.map((product, index) => (
           <Product key={`product-${index}`} {...product} />
         ))}
