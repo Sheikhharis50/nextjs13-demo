@@ -1,6 +1,6 @@
 "use client"
 
-import ProductPage from "@/components/Product";
+import SideBar from "@/components/Product/Sidebar";
 import Box from '@mui/material/Box';
 
 export default function ProductLayout({
@@ -10,7 +10,7 @@ export default function ProductLayout({
 }) {
   return (
     <Box component="main" className="flex">
-      <ProductPage />
+      <SideBar />
       <Box component="div">
         {children}
       </Box>
