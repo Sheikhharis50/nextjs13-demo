@@ -1,5 +1,5 @@
 import { getMetaData } from "@/routes/utils";
-import Product, { ProductProps } from "@/components/Product";
+import Product, { ProductProps } from "@/components/Products";
 
 export const metadata = getMetaData("product");
 

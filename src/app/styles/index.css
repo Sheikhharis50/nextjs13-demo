@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(./globals.css);
+@import url(./button.css);
+@import url(./form.css);
